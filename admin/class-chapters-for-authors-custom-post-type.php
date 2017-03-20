@@ -76,7 +76,7 @@ function chapters_for_authors() {
 		'has_archive'           => true,		
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'rewrite'				=> $rewrite,
+		'rewrite'		=> $rewrite,
 		'capability_type'       => 'post'
 	);
 	register_post_type( 'chapters_for_authors', $args );
