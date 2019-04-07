@@ -69,7 +69,7 @@ class Chapters_For_Authors {
 	public function __construct() {
 
 		$this->plugin_name = 'chapters-for-authors';
-		$this->version = '1.0.0';
+		$this->version = '1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
