@@ -62,7 +62,7 @@ function chapters_for_authors() {
 		'label'                 => __( 'Chapter', 'chapters-for-authors' ),
 		'description'           => __( 'Write your book chapter by chapter', 'chapters-for-authors' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions' ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'page-attributes' ),
 		'taxonomies'            => array( ),
 		'hierarchical'          => false,
 		'public'                => true,
