@@ -40,8 +40,8 @@ function chapters_quotes() {
 	wp_create_nonce( plugin_basename( __FILE__ ) ) . '" />';
 
 	/** Get the quotes data if its already been entered */
-	$quote		= get_post_meta( $post->ID, '_thequote', true );
-	$author		= get_post_meta( $post->ID, '_theauthor', true );
+	$quote  = get_post_meta( $post->ID, '_thequote', true );
+	$author = get_post_meta( $post->ID, '_theauthor', true );
 
 	/** Echo out the fields */
 	echo '<div class="cfa-quote">';
