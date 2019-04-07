@@ -34,7 +34,7 @@ function chapters_for_authors() {
 		'parent_item_colon'     => __( 'Parent Chapter:', 'chapters-for-authors' ),
 		'all_items'             => __( 'All Chapters', 'chapters-for-authors' ),
 		'add_new_item'          => __( 'Add New Chapter', 'chapters-for-authors' ),
-		'add_new'               => __( 'Add Chapters', 'chapters-for-authors' ),
+		'add_new'               => __( 'Add Chapter', 'chapters-for-authors' ),
 		'new_item'              => __( 'New Chapter', 'chapters-for-authors' ),
 		'edit_item'             => __( 'Edit Chapter', 'chapters-for-authors' ),
 		'update_item'           => __( 'Update Chapter', 'chapters-for-authors' ),
