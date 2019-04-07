@@ -57,39 +57,37 @@ add_action( 'init', 'chapters_books', 0 );
  *
  * @since    1.0.0
  */
-
-add_action( 'init', 'chapters_characters', 0 );
-
 function chapters_characters() {
 
-  $labels = array(
-	'name' => _x( 'Characters', 'general name' ),
-	'singular_name' => _x( 'Character', 'singular name' ),
-	'search_items' =>  __( 'Search Characters' ),
-	'popular_items' => __( 'Popular Characters' ),
-	'all_items' => __( 'All Characters' ),
-	'parent_item' => null,
-	'parent_item_colon' => null,
-	'edit_item' => __( 'Edit Character' ), 
-	'update_item' => __( 'Update Character' ),
-	'add_new_item' => __( 'Add New Character' ),
-	'new_item_name' => __( 'New Character Name' ),
-	'separate_items_with_commas' => __( 'Separate characterss with commas' ),
-	'add_or_remove_items' => __( 'Add or remove characterss' ),
-	'choose_from_most_used' => __( 'Choose from the most used characterss' ),
-	'not_found' => 'No characterss found',
-	'menu_name' => __( 'Characters' ),
-  ); 
+	$labels = array(
+		'name'                       => _x( 'Characters', 'general name', 'chapters-for-authors' ),
+		'singular_name'              => _x( 'Character', 'singular name', 'chapters-for-authors' ),
+		'search_items'               => __( 'Search Characters', 'chapters-for-authors' ),
+		'popular_items'              => __( 'Popular Characters', 'chapters-for-authors' ),
+		'all_items'                  => __( 'All Characters', 'chapters-for-authors' ),
+		'parent_item'                => null,
+		'parent_item_colon'          => null,
+		'edit_item'                  => __( 'Edit Character', 'chapters-for-authors' ), 
+		'update_item'                => __( 'Update Character', 'chapters-for-authors' ),
+		'add_new_item'               => __( 'Add New Character', 'chapters-for-authors' ),
+		'new_item_name'              => __( 'New Character Name', 'chapters-for-authors' ),
+		'separate_items_with_commas' => __( 'Separate characterss with commas', 'chapters-for-authors' ),
+		'add_or_remove_items'        => __( 'Add or remove characterss', 'chapters-for-authors' ),
+		'choose_from_most_used'      => __( 'Choose from the most used characterss', 'chapters-for-authors' ),
+		'not_found'                  => __( 'No characters found', 'chapters-for-authors' ),
+		'menu_name'                  => __( 'Characters', 'chapters-for-authors' ),
+	); 
 
-  register_taxonomy('characters',array('chapters_for_authors'),array(
-	'hierarchical' => false,
-	'labels' => $labels,
-	'show_ui' => true,
-	'show_in_rest' => true,
-	'show_admin_column' => true,
-	'show_in_nav_menus' => false,
-	'update_count_callback' => '_update_post_term_count',
-	'query_var' => true,
-	'rewrite' => array( 'slug' => 'character' ),
-  ));
+	register_taxonomy( 'characters', array( 'chapters_for_authors' ), array(
+		'hierarchical'          => false,
+		'labels'                => $labels,
+		'show_ui'               => true,
+		'show_in_rest'          => true,
+		'show_admin_column'     => true,
+		'show_in_nav_menus'     => false,
+		'update_count_callback' => '_update_post_term_count',
+		'query_var'             => true,
+		'rewrite'               => array( 'slug' => 'character' ),
+	) );
 }
+add_action( 'init', 'chapters_characters', 0 );
