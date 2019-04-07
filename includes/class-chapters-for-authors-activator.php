@@ -30,7 +30,15 @@ class Chapters_For_Authors_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-
-	}
+		chapters_for_authors();
+		chapters_books();
+		chapters_characters();
+		/**
+		 * Flush Rewrite Rules
+		 */
+		global $wp_rewrite;
+		$wp_rewrite->init();
+		$wp_rewrite->flush_rules();
+   }
 
 }
