@@ -16,41 +16,40 @@
  *
  * @since    1.0.0
  */
-
-add_action( 'init', 'chapters_books', 0 );
-
 function chapters_books() {
 
-  $labels = array(
-	'name' => _x( 'Books', 'taxonomy general name' ),
-	'singular_name' => _x( 'Book', 'taxonomy singular name' ),
-	'search_items' =>  __( 'Search Books' ),
-	'all_items' => __( 'All Books' ),
-	'parent_item' => __( 'Parent Book' ),
-	'parent_item_colon' => __( 'Parent Book:' ),
-	'edit_item' => __( 'Edit Book' ), 
-	'update_item' => __( 'Update Book' ),
-	'add_new_item' => __( 'Add New Book' ),
-	'new_item_name' => __( 'New Book Name' ),
-	'not_found' => 'No categories found',
-	'menu_name' => __( 'Books' ),
-  ); 	
+	$labels = array(
+		'name'              => _x( 'Books', 'taxonomy general name', 'chapters-for-authors' ),
+		'singular_name'     => _x( 'Book', 'taxonomy singular name', 'chapters-for-authors' ),
+		'search_items'      => __( 'Search Books', 'chapters-for-authors' ),
+		'all_items'         => __( 'All Books', 'chapters-for-authors' ),
+		'parent_item'       => __( 'Parent Book', 'chapters-for-authors' ),
+		'parent_item_colon' => __( 'Parent Book:', 'chapters-for-authors' ),
+		'edit_item'         => __( 'Edit Book', 'chapters-for-authors' ), 
+		'update_item'       => __( 'Update Book', 'chapters-for-authors' ),
+		'add_new_item'      => __( 'Add New Book', 'chapters-for-authors' ),
+		'new_item_name'     => __( 'New Book Name', 'chapters-for-authors' ),
+		'not_found'         => __( 'No books found', 'chapters-for-authors' ),
+		'menu_name'         => __( 'Books', 'chapters-for-authors' ),
+	); 	
 
-  register_taxonomy('books','chapters_for_authors', array(
-	'hierarchical' => true,
-	'labels' => $labels,
-	'show_ui' => true,
-	'show_in_rest' => true,
-	'show_admin_column' => true,
-	'show_in_nav_menus' => false,
-	'query_var' => true,
-	'rewrite' => array(
-		'slug' => 'book',
-		'with_front' => false
-	),
-  ));
+	register_taxonomy( 'books', 'chapters_for_authors', array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_in_rest'      => true,
+		'show_admin_column' => true,
+		'show_in_nav_menus' => false,
+		'query_var'         => true,
+		'rewrite'           => array(
+			'slug'       => 'book',
+			'with_front' => false
+		),
+	) );
 
 }
+add_action( 'init', 'chapters_books', 0 );
+
 /**
  * Characters Taxonomy
  *
