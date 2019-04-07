@@ -45,12 +45,12 @@ function chapters_quotes() {
 
 	/** Echo out the fields */
 	echo '<div class="cfa-quote">';
-	echo '<p>Quote:</p>';
 	echo '<textarea name="_thequote" class="widefat">' . $quote  . '</textarea>';
+	echo '<p>' . __( 'Quote', 'chapters-for-authors' ) . ':</p>';
 	echo '</div>';
 	echo '<div class="cfa-quote">';
-	echo '<p>Author:</p>';
 	echo '<input type="text" name="_theauthor" value="' . $author  . '" class="widefat" />';
+	echo '<p>' . __( 'Author', 'chapters-for-authors' ) . ':</p>';
 	echo '</div>';
 
 }
