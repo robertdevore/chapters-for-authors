@@ -19,7 +19,7 @@
 function add_quotes_metaboxes() {
 	add_meta_box(
 		'chapters_quotes',
-		__( 'Introduction Quote', 'chapters-for-authors' ),
+		__( 'Introduction', 'chapters-for-authors' ),
 		'chapters_quotes',
 		'chapters_for_authors',
 		'side',
