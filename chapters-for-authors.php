@@ -9,11 +9,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Chapters for Authors
- * Plugin URI:        http://www.robertdevore.com/chapters-for-authors-wordpress-plugin
+ * Plugin URI:        https://www.robertdevore.com/chapters-for-authors-wordpress-plugin
  * Description:       Write your next book from the comfort of your WordPress dashboard.
  * Version:           1.0.0
- * Author:            Robert DeVore
- * Author URI:        http://www.robertdevore.com
+ * Author:            Devio Digital
+ * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       chapters-for-authors
