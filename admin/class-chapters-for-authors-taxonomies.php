@@ -2,7 +2,7 @@
 /**
  * The file that defines the taxonomies used by the various custom post types
  *
- * @link       http://www.robertdevore.com
+ * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
  * @package    Chapters_For_Authors

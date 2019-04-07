@@ -2,7 +2,7 @@
 /**
  * The file that defines the metaboxes used by the plugin
  *
- * @link       http://www.robertdevore.com
+ * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
  * @package    Chapters_For_Authors

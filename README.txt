@@ -1,6 +1,6 @@
 === Chapters for Authors ===
 Contributors: deviodigital
-Donate link: http://www.robertdevore.com
+Donate link: https://www.deviodigital.com
 Tags: chapters, authors, writers, books
 Requires at least: 3.0.1
 Tested up to: 4.6.1
