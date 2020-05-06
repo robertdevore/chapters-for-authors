@@ -19,7 +19,7 @@
  *
  * @package    Chapters_For_Authors
  * @subpackage Chapters_For_Authors/includes
- * @author     Robert DeVore <deviodigital@gmail.com>
+ * @author     Robert DeVore <contact@deviodigital.com>
  */
 class Chapters_For_Authors_Loader {
 

@@ -18,7 +18,7 @@
  *
  * @package    Chapters_For_Authors
  * @subpackage Chapters_For_Authors/admin
- * @author     Robert DeVore <deviodigital@gmail.com>
+ * @author     Robert DeVore <contact@deviodigital.com>
  */
 if ( ! function_exists('chapters_for_authors') ) {
 
