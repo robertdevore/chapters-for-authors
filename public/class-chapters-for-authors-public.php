@@ -50,7 +50,7 @@ class Chapters_For_Authors_Public {
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->version     = $version;
 
 	}
 
@@ -60,21 +60,8 @@ class Chapters_For_Authors_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Chapters_For_Authors_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Chapters_For_Authors_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-public.css', array(), $this->version, 'all' );
-
+		// Disabled until needed - General public CSS.
+		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-public.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -83,19 +70,7 @@ class Chapters_For_Authors_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Chapters_For_Authors_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Chapters_For_Authors_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
+		// Disabled until needed - General public JS.
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chapters-for-authors-public.js', array( 'jquery' ), $this->version, false );
 
 	}

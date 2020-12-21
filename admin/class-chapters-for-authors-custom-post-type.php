@@ -20,10 +20,10 @@
  * @subpackage Chapters_For_Authors/admin
  * @author     Robert DeVore <contact@deviodigital.com>
  */
-if ( ! function_exists('chapters_for_authors') ) {
+if ( ! function_exists( 'chapters_for_authors_post_type' ) ) {
 
 // Register Custom Post Type
-function chapters_for_authors() {
+function chapters_for_authors_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Chapters', 'Post Type General Name', 'chapters-for-authors' ),
@@ -59,7 +59,7 @@ function chapters_for_authors() {
 		'feeds'               => true,
 	);
 	$args = array(
-		'label'                 => __( 'Chapter', 'chapters-for-authors' ),
+		'label'                 => __( 'Chapters', 'chapters-for-authors' ),
 		'description'           => __( 'Write your book chapter by chapter', 'chapters-for-authors' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'page-attributes' ),
@@ -83,6 +83,6 @@ function chapters_for_authors() {
 	register_post_type( 'chapters_for_authors', $args );
 
 }
-add_action( 'init', 'chapters_for_authors', 0 );
+add_action( 'init', 'chapters_for_authors_post_type', 0 );
 
 }

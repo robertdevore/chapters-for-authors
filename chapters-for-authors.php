@@ -26,6 +26,11 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Current plugin version.
+ */
+define( 'CHAPTERS_FOR_AUTHORS_VERSION', '1.1' );
+
+/**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-chapters-for-authors-activator.php
  */

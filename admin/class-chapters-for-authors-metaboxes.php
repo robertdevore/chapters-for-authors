@@ -6,7 +6,7 @@
  * @since      1.0.0
  *
  * @package    Chapters_For_Authors
- * @subpackage Chapters_For_Authors/admin/post-types
+ * @subpackage Chapters_For_Authors/admin
  */
 
 /**
@@ -16,7 +16,7 @@
  *
  * @since    1.0.0
  */
-function add_quotes_metaboxes() {
+function chapters_add_quotes_metaboxes() {
 	add_meta_box(
 		'chapters_quotes',
 		__( 'Introduction', 'chapters-for-authors' ),
@@ -27,7 +27,7 @@ function add_quotes_metaboxes() {
 	);
 }
 
-add_action( 'add_meta_boxes', 'add_quotes_metaboxes' );
+add_action( 'add_meta_boxes', 'chapters_add_quotes_metaboxes' );
 
 /**
  * Building the metabox
@@ -35,11 +35,11 @@ add_action( 'add_meta_boxes', 'add_quotes_metaboxes' );
 function chapters_quotes() {
 	global $post;
 
-	/** Noncename needed to verify where the data originated */
-	echo '<input type="hidden" name="quotesmeta_noncename" id="quotesmeta_noncename" value="' .
+	// Noncename needed to verify where the data originated.
+	echo '<input type="hidden" name="quotes_meta_noncename" id="quotes_meta_noncename" value="' .
 	wp_create_nonce( plugin_basename( __FILE__ ) ) . '" />';
 
-	/** Get the quotes data if its already been entered */
+	// Get the quotes data if its already been entered.
 	$quote  = get_post_meta( $post->ID, '_thequote', true );
 	$author = get_post_meta( $post->ID, '_theauthor', true );
 
@@ -55,8 +55,9 @@ function chapters_quotes() {
 
 }
 
-/** Save the Metabox Data */
-
+/**
+ * Save the Metabox Data
+ */
 function chapters_save_quotes_meta( $post_id, $post ) {
 
 	/**
@@ -64,13 +65,13 @@ function chapters_save_quotes_meta( $post_id, $post ) {
 	 * because save_post can be triggered at other times
 	 */
 	if (
-		! isset( $_POST['quotesmeta_noncename' ] ) ||
-		! wp_verify_nonce( $_POST['quotesmeta_noncename'], plugin_basename( __FILE__ ) )		
+		! isset( $_POST['quotes_meta_noncename' ] ) ||
+		! wp_verify_nonce( $_POST['quotes_meta_noncename'], plugin_basename( __FILE__ ) )		
 	) {
 		return $post->ID;
 	}
 
-	/** Is the user allowed to edit the post or page? */
+	// Is the user allowed to edit the post or page?.
 	if ( ! current_user_can( 'edit_post', $post->ID ) ) {
 		return $post->ID;
 	}
@@ -83,23 +84,21 @@ function chapters_save_quotes_meta( $post_id, $post ) {
 	$quotes_meta['_thequote']	= $_POST['_thequote'];
 	$quotes_meta['_theauthor']	= $_POST['_theauthor'];
 
-	/** Add values of $quotes_meta as custom fields */
-
-	foreach ( $quotes_meta as $key => $value ) { /** Cycle through the $quotes_meta array! */
-		if ( $post->post_type == 'revision' ) { /** Don't store custom data twice */
+	// Add values of $quotes_meta as custom fields.
+	foreach ( $quotes_meta as $key => $value ) {
+		if ( $post->post_type == 'revision' ) {
 			return;
 		}
-		$value = implode( ',', (array) $value ); // If $value is an array, make it a CSV (unlikely)
-		if ( get_post_meta( $post->ID, $key, false ) ) { // If the custom field already has a value
+		$value = implode( ',', (array) $value );
+		if ( get_post_meta( $post->ID, $key, false ) ) {
 			update_post_meta( $post->ID, $key, $value );
-		} else { // If the custom field doesn't have a value
+		} else {
 			add_post_meta( $post->ID, $key, $value );
 		}
-		if ( ! $value ) { /** Delete if blank */
+		if ( ! $value ) {
 			delete_post_meta( $post->ID, $key );
 		}
 	}
 
 }
-
 add_action( 'save_post', 'chapters_save_quotes_meta', 1, 2 ); // save the custom fields
