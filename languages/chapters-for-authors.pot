@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Chapters for Authors\n"
-"POT-Creation-Date: 2020-12-25 18:17-0500\n"
-"PO-Revision-Date: 2020-12-25 18:16-0500\n"
+"POT-Creation-Date: 2020-12-25 18:28-0500\n"
+"PO-Revision-Date: 2020-12-25 18:28-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -226,15 +226,15 @@ msgid "New Character Name"
 msgstr ""
 
 #: admin/class-chapters-for-authors-taxonomies.php:74
-msgid "Separate characterss with commas"
+msgid "Separate characters with commas"
 msgstr ""
 
 #: admin/class-chapters-for-authors-taxonomies.php:75
-msgid "Add or remove characterss"
+msgid "Add or remove characters"
 msgstr ""
 
 #: admin/class-chapters-for-authors-taxonomies.php:76
-msgid "Choose from the most used characterss"
+msgid "Choose from the most used characters"
 msgstr ""
 
 #: admin/class-chapters-for-authors-taxonomies.php:77

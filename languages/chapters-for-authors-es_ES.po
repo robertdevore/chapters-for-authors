@@ -1,23 +1,21 @@
 msgid ""
 msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Chapters for Authors\n"
-"POT-Creation-Date: 2020-12-25 18:25-0500\n"
-"PO-Revision-Date: 2020-12-25 18:25-0500\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2020-12-25 18:28-0500\n"
+"PO-Revision-Date: 2020-12-25 18:29-0500\n"
 "Language-Team: \n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: chapters-for-authors.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
@@ -226,15 +224,15 @@ msgid "New Character Name"
 msgstr "Nuevo nombre de personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:74
-msgid "Separate characterss with commas"
-msgstr "Separe los caracteres con comas"
+msgid "Separate characters with commas"
+msgstr "Separe los caracteres con comas."
 
 #: admin/class-chapters-for-authors-taxonomies.php:75
-msgid "Add or remove characterss"
+msgid "Add or remove characters"
 msgstr "Agregar o quitar personajes"
 
 #: admin/class-chapters-for-authors-taxonomies.php:76
-msgid "Choose from the most used characterss"
+msgid "Choose from the most used characters"
 msgstr "Elige entre los personajes más usados"
 
 #: admin/class-chapters-for-authors-taxonomies.php:77

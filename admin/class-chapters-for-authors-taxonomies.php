@@ -71,9 +71,9 @@ function chapters_characters() {
 		'update_item'                => __( 'Update Character', 'chapters-for-authors' ),
 		'add_new_item'               => __( 'Add New Character', 'chapters-for-authors' ),
 		'new_item_name'              => __( 'New Character Name', 'chapters-for-authors' ),
-		'separate_items_with_commas' => __( 'Separate characterss with commas', 'chapters-for-authors' ),
-		'add_or_remove_items'        => __( 'Add or remove characterss', 'chapters-for-authors' ),
-		'choose_from_most_used'      => __( 'Choose from the most used characterss', 'chapters-for-authors' ),
+		'separate_items_with_commas' => __( 'Separate characters with commas', 'chapters-for-authors' ),
+		'add_or_remove_items'        => __( 'Add or remove characters', 'chapters-for-authors' ),
+		'choose_from_most_used'      => __( 'Choose from the most used characters', 'chapters-for-authors' ),
 		'not_found'                  => __( 'No characters found', 'chapters-for-authors' ),
 		'menu_name'                  => __( 'Characters', 'chapters-for-authors' ),
 	); 
