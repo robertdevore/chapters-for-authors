@@ -1,15 +1,15 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Chapters for Authors\n"
-"POT-Creation-Date: 2020-12-25 18:17-0500\n"
-"PO-Revision-Date: 2020-12-25 18:16-0500\n"
+"POT-Creation-Date: 2020-12-25 18:25-0500\n"
+"PO-Revision-Date: 2020-12-25 18:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -24,243 +24,243 @@ msgstr ""
 #: admin/class-chapters-for-authors-custom-post-type.php:29
 msgctxt "Post Type General Name"
 msgid "Chapters"
-msgstr ""
+msgstr "Capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:30
 msgctxt "Post Type Singular Name"
 msgid "Chapter"
-msgstr ""
+msgstr "Capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:31
 #: admin/class-chapters-for-authors-custom-post-type.php:32
 #: admin/class-chapters-for-authors-custom-post-type.php:62
 msgid "Chapters"
-msgstr ""
+msgstr "Capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:33
 msgid "Chapters Archives"
-msgstr ""
+msgstr "Archivos de capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:34
 msgid "Parent Chapter:"
-msgstr ""
+msgstr "Capítulo de Padres"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:35
 msgid "All Chapters"
-msgstr ""
+msgstr "Todos los capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:36
 msgid "Add New Chapter"
-msgstr ""
+msgstr "Agregar nuevo capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:37
 msgid "Add Chapter"
-msgstr ""
+msgstr "Agregar capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:38
 msgid "New Chapter"
-msgstr ""
+msgstr "Nuevo capitulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:39
 msgid "Edit Chapter"
-msgstr ""
+msgstr "Editar capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:40
 msgid "Update Chapter"
-msgstr ""
+msgstr "Actualizar capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:41
 msgid "View Chapter"
-msgstr ""
+msgstr "Ver capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:42
 msgid "Search Chapters"
-msgstr ""
+msgstr "Capítulos de búsqueda"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:43
 msgid "Not found"
-msgstr ""
+msgstr "No encontrado"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:44
 msgid "Not found in Trash"
-msgstr ""
+msgstr "No encontrado en la papelera"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:45
 msgid "Featured Image"
-msgstr ""
+msgstr "Imagen destacada"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:46
 msgid "Set featured image"
-msgstr ""
+msgstr "Establecer imagen destacada"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:47
 msgid "Remove featured image"
-msgstr ""
+msgstr "Eliminar la imagen destacada"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:48
 msgid "Use as featured image"
-msgstr ""
+msgstr "Usar como imagen destacada"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:49
 msgid "Insert into chapter"
-msgstr ""
+msgstr "Insertar en el capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:50
 msgid "Uploaded to this chapter"
-msgstr ""
+msgstr "Subido a este capítulo"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:51
 msgid "Chapters list"
-msgstr ""
+msgstr "Lista de capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:52
 msgid "Chapters list navigation"
-msgstr ""
+msgstr "Navegación por la lista de capítulos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:53
 msgid "Filter items list"
-msgstr ""
+msgstr "Filtrar lista de elementos"
 
 #: admin/class-chapters-for-authors-custom-post-type.php:63
 msgid "Write your book chapter by chapter"
-msgstr ""
+msgstr "Escribe tu libro capítulo por capítulo"
 
 #: admin/class-chapters-for-authors-metaboxes.php:22
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #: admin/class-chapters-for-authors-metaboxes.php:48
 msgid "Quote"
-msgstr ""
+msgstr "Cita"
 
 #: admin/class-chapters-for-authors-metaboxes.php:52
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: admin/class-chapters-for-authors-taxonomies.php:22
 msgctxt "taxonomy general name"
 msgid "Books"
-msgstr ""
+msgstr "Libros"
 
 #: admin/class-chapters-for-authors-taxonomies.php:23
 msgctxt "taxonomy singular name"
 msgid "Book"
-msgstr ""
+msgstr "Libro"
 
 #: admin/class-chapters-for-authors-taxonomies.php:24
 msgid "Search Books"
-msgstr ""
+msgstr "Buscar reservas"
 
 #: admin/class-chapters-for-authors-taxonomies.php:25
 msgid "All Books"
-msgstr ""
+msgstr "Todos los directorios"
 
 #: admin/class-chapters-for-authors-taxonomies.php:26
 msgid "Parent Book"
-msgstr ""
+msgstr "Libro principal"
 
 #: admin/class-chapters-for-authors-taxonomies.php:27
 msgid "Parent Book:"
-msgstr ""
+msgstr "Libro para Padres"
 
 #: admin/class-chapters-for-authors-taxonomies.php:28
 msgid "Edit Book"
-msgstr ""
+msgstr "Editar libro"
 
 #: admin/class-chapters-for-authors-taxonomies.php:29
 msgid "Update Book"
-msgstr ""
+msgstr "Actualizar Reserva"
 
 #: admin/class-chapters-for-authors-taxonomies.php:30
 msgid "Add New Book"
-msgstr ""
+msgstr "Agregar Nuevo Libro"
 
 #: admin/class-chapters-for-authors-taxonomies.php:31
 msgid "New Book Name"
-msgstr ""
+msgstr "Nuevo nombre de libro"
 
 #: admin/class-chapters-for-authors-taxonomies.php:32
 msgid "No books found"
-msgstr ""
+msgstr "No se encontraron libros"
 
 #: admin/class-chapters-for-authors-taxonomies.php:33
 msgid "Books"
-msgstr ""
+msgstr "Libros"
 
 #: admin/class-chapters-for-authors-taxonomies.php:63
 msgctxt "general name"
 msgid "Characters"
-msgstr ""
+msgstr "Caracteres"
 
 #: admin/class-chapters-for-authors-taxonomies.php:64
 msgctxt "singular name"
 msgid "Character"
-msgstr ""
+msgstr "Personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:65
 msgid "Search Characters"
-msgstr ""
+msgstr "Caracteres de búsqueda"
 
 #: admin/class-chapters-for-authors-taxonomies.php:66
 msgid "Popular Characters"
-msgstr ""
+msgstr "Personajes populares"
 
 #: admin/class-chapters-for-authors-taxonomies.php:67
 msgid "All Characters"
-msgstr ""
+msgstr "Todos los personajes"
 
 #: admin/class-chapters-for-authors-taxonomies.php:70
 msgid "Edit Character"
-msgstr ""
+msgstr "Editar personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:71
 msgid "Update Character"
-msgstr ""
+msgstr "Actualizar personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:72
 msgid "Add New Character"
-msgstr ""
+msgstr "Agregar nuevo personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:73
 msgid "New Character Name"
-msgstr ""
+msgstr "Nuevo nombre de personaje"
 
 #: admin/class-chapters-for-authors-taxonomies.php:74
 msgid "Separate characterss with commas"
-msgstr ""
+msgstr "Separe los caracteres con comas"
 
 #: admin/class-chapters-for-authors-taxonomies.php:75
 msgid "Add or remove characterss"
-msgstr ""
+msgstr "Agregar o quitar personajes"
 
 #: admin/class-chapters-for-authors-taxonomies.php:76
 msgid "Choose from the most used characterss"
-msgstr ""
+msgstr "Elige entre los personajes más usados"
 
 #: admin/class-chapters-for-authors-taxonomies.php:77
 msgid "No characters found"
-msgstr ""
+msgstr "No se encontraron caracteres"
 
 #: admin/class-chapters-for-authors-taxonomies.php:78
 msgid "Characters"
-msgstr ""
+msgstr "Caracteres"
 
 #. Plugin Name of the plugin/theme
 msgid "Chapters for Authors"
-msgstr ""
+msgstr "Capítulos para autores"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.robertdevore.com/chapters-for-authors-wordpress-plugin"
-msgstr ""
+msgstr "https://www.robertdevore.com/chapters-for-authors-wordpress-plugin"
 
 #. Description of the plugin/theme
 msgid "Write your next book from the comfort of your WordPress dashboard."
-msgstr ""
+msgstr "Escribe tu próximo libro desde la comodidad de tu tablero de WordPress"
 
 #. Author of the plugin/theme
 msgid "Devio Digital"
-msgstr ""
+msgstr "Devio Digital"
 
 #. Author URI of the plugin/theme
 msgid "https://www.deviodigital.com"
-msgstr ""
+msgstr "https://www.deviodigital.com"
