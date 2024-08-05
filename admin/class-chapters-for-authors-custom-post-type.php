@@ -25,7 +25,7 @@ if ( ! function_exists( 'chapters_for_authors_post_type' ) ) {
 // Register Custom Post Type
 function chapters_for_authors_post_type() {
 
-	$labels = array(
+	$labels = [
 		'name'                  => _x( 'Chapters', 'Post Type General Name', 'chapters-for-authors' ),
 		'singular_name'         => _x( 'Chapter', 'Post Type Singular Name', 'chapters-for-authors' ),
 		'menu_name'             => __( 'Chapters', 'chapters-for-authors' ),
@@ -51,19 +51,19 @@ function chapters_for_authors_post_type() {
 		'items_list'            => __( 'Chapters list', 'chapters-for-authors' ),
 		'items_list_navigation' => __( 'Chapters list navigation', 'chapters-for-authors' ),
 		'filter_items_list'     => __( 'Filter items list', 'chapters-for-authors' ),
-	);
-	$rewrite = array(
+	];
+	$rewrite = [
 		'slug'                => 'chapter',
 		'with_front'          => true,
 		'pages'               => true,
 		'feeds'               => true,
-	);
-	$args = array(
+	];
+	$args = [
 		'label'                 => __( 'Chapters', 'chapters-for-authors' ),
 		'description'           => __( 'Write your book chapter by chapter', 'chapters-for-authors' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'page-attributes' ),
-		'taxonomies'            => array( ),
+		'supports'              => [ 'title', 'editor', 'author', 'thumbnail', 'revisions', 'page-attributes' ],
+		'taxonomies'            => [ ],
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -79,7 +79,7 @@ function chapters_for_authors_post_type() {
 		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,
 		'capability_type'       => 'post'
-	);
+	];
 	register_post_type( 'chapters_for_authors', $args );
 
 }

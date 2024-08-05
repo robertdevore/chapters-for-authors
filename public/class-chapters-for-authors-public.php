@@ -61,7 +61,7 @@ class Chapters_For_Authors_Public {
 	 */
 	public function enqueue_styles() {
 		// Disabled until needed - General public CSS.
-		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-public.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-public.css', [], $this->version, 'all' );
 	}
 
 	/**
@@ -71,7 +71,7 @@ class Chapters_For_Authors_Public {
 	 */
 	public function enqueue_scripts() {
 		// Disabled until needed - General public JS.
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chapters-for-authors-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chapters-for-authors-public.js', [ 'jquery' ], $this->version, false );
 
 	}
 

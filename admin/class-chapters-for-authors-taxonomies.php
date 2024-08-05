@@ -18,7 +18,7 @@
  */
 function chapters_books() {
 
-	$labels = array(
+	$labels = [
 		'name'              => _x( 'Books', 'taxonomy general name', 'chapters-for-authors' ),
 		'singular_name'     => _x( 'Book', 'taxonomy singular name', 'chapters-for-authors' ),
 		'search_items'      => __( 'Search Books', 'chapters-for-authors' ),
@@ -31,9 +31,9 @@ function chapters_books() {
 		'new_item_name'     => __( 'New Book Name', 'chapters-for-authors' ),
 		'not_found'         => __( 'No books found', 'chapters-for-authors' ),
 		'menu_name'         => __( 'Books', 'chapters-for-authors' ),
-	); 	
+	]; 	
 
-	register_taxonomy( 'books', 'chapters_for_authors', array(
+	register_taxonomy( 'books', 'chapters_for_authors', [
 		'hierarchical'      => true,
 		'labels'            => $labels,
 		'show_ui'           => true,
@@ -41,11 +41,11 @@ function chapters_books() {
 		'show_admin_column' => true,
 		'show_in_nav_menus' => false,
 		'query_var'         => true,
-		'rewrite'           => array(
+		'rewrite'           => [
 			'slug'       => 'book',
 			'with_front' => false
-		),
-	) );
+        ],
+	] );
 
 }
 add_action( 'init', 'chapters_books', 0 );
@@ -59,7 +59,7 @@ add_action( 'init', 'chapters_books', 0 );
  */
 function chapters_characters() {
 
-	$labels = array(
+	$labels = [
 		'name'                       => _x( 'Characters', 'general name', 'chapters-for-authors' ),
 		'singular_name'              => _x( 'Character', 'singular name', 'chapters-for-authors' ),
 		'search_items'               => __( 'Search Characters', 'chapters-for-authors' ),
@@ -76,9 +76,9 @@ function chapters_characters() {
 		'choose_from_most_used'      => __( 'Choose from the most used characters', 'chapters-for-authors' ),
 		'not_found'                  => __( 'No characters found', 'chapters-for-authors' ),
 		'menu_name'                  => __( 'Characters', 'chapters-for-authors' ),
-	); 
+	]; 
 
-	register_taxonomy( 'characters', array( 'chapters_for_authors' ), array(
+	register_taxonomy( 'characters', [ 'chapters_for_authors' ], [
 		'hierarchical'          => false,
 		'labels'                => $labels,
 		'show_ui'               => true,
@@ -87,7 +87,7 @@ function chapters_characters() {
 		'show_in_nav_menus'     => false,
 		'update_count_callback' => '_update_post_term_count',
 		'query_var'             => true,
-		'rewrite'               => array( 'slug' => 'character' ),
-	) );
+		'rewrite'               => [ 'slug' => 'character' ],
+	] );
 }
 add_action( 'init', 'chapters_characters', 0 );

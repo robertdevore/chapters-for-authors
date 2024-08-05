@@ -61,7 +61,7 @@ class Chapters_For_Authors_Admin {
 	 */
 	public function enqueue_styles() {
 		// Disabled until needed - General plugin admin CSS.
-		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-admin.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chapters-for-authors-admin.css', [], $this->version, 'all' );
 	}
 
 	/**
@@ -71,7 +71,7 @@ class Chapters_For_Authors_Admin {
 	 */
 	public function enqueue_scripts() {
 		// Disabled until needed - General plugin admin JS.
-		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chapters-for-authors-admin.js', array( 'jquery' ), $this->version, false );
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chapters-for-authors-admin.js', [ 'jquery' ], $this->version, false );
 	}
 
 }
