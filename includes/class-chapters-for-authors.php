@@ -67,7 +67,7 @@ class Chapters_For_Authors {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		$this->version = '1.1';
+		$this->version = '1.1.1';
 		if ( defined( 'CHAPTERS_FOR_AUTHORS_VERSION' ) ) {
 			$this->version = CHAPTERS_FOR_AUTHORS_VERSION;
 		}
